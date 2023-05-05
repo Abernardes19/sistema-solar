@@ -16,9 +16,9 @@ export default function Mission() {
     return dados;
   }
   return (
-    <div>
+    <div className=" bg-gray-5 text-white flex flex-col items-center">
         <Title headline="Missões" />
-        <div>
+        <div className=" lg:w-[80%] flex flex-wrap justify-center">
           { setMissions() }
         </div>
       </div>

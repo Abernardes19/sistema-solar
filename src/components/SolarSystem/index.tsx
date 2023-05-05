@@ -14,9 +14,11 @@ export default function SolarSystem() {
     return data;
   }
   return (
-    <div className=" bg-gray-6 fixed top-[150px] w-screen">
+    <div className=" flex flex-col bg-gray-6 mt-[150px] w-screen items-center gap-10 pb-20 border-b-[1px]">
       <Title headline="Planetas" />
-      { allPlanets() }
+      <div className="flex flex-wrap w-screen sm:w-[50%]">
+        { allPlanets() }
+      </div>
     </div>
   )
 }
